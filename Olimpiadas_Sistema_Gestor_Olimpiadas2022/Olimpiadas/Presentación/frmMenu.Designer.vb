@@ -28,12 +28,11 @@ Partial Class frmMenu
         Me.mnuEnfermeros = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFichaMedica = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuFichaMedicaReport = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuEstadisticas = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FichaMédicaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EstádisticaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuAcercaDe = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnuLlamado = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -56,64 +55,58 @@ Partial Class frmMenu
         'mnuPacientes
         '
         Me.mnuPacientes.Name = "mnuPacientes"
-        Me.mnuPacientes.Size = New System.Drawing.Size(144, 22)
+        Me.mnuPacientes.Size = New System.Drawing.Size(152, 22)
         Me.mnuPacientes.Text = "Pacientes"
         '
         'mnuEnfermeros
         '
         Me.mnuEnfermeros.Name = "mnuEnfermeros"
-        Me.mnuEnfermeros.Size = New System.Drawing.Size(144, 22)
+        Me.mnuEnfermeros.Size = New System.Drawing.Size(152, 22)
         Me.mnuEnfermeros.Text = "Enfermeros"
         '
         'mnuFichaMedica
         '
         Me.mnuFichaMedica.Name = "mnuFichaMedica"
-        Me.mnuFichaMedica.Size = New System.Drawing.Size(144, 22)
+        Me.mnuFichaMedica.Size = New System.Drawing.Size(152, 22)
         Me.mnuFichaMedica.Text = "Ficha Médica"
         '
         'AyudaToolStripMenuItem
         '
-        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFichaMedicaReport, Me.mnuEstadisticas, Me.mnuLlamado})
+        Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FichaMédicaToolStripMenuItem, Me.EstádisticaToolStripMenuItem})
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
         Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.AyudaToolStripMenuItem.Text = "Reporte"
         '
-        'mnuFichaMedicaReport
+        'FichaMédicaToolStripMenuItem
         '
-        Me.mnuFichaMedicaReport.Name = "mnuFichaMedicaReport"
-        Me.mnuFichaMedicaReport.Size = New System.Drawing.Size(152, 22)
-        Me.mnuFichaMedicaReport.Text = "Ficha Médica"
+        Me.FichaMédicaToolStripMenuItem.Name = "FichaMédicaToolStripMenuItem"
+        Me.FichaMédicaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FichaMédicaToolStripMenuItem.Text = "Ficha Médica"
         '
-        'mnuEstadisticas
+        'EstádisticaToolStripMenuItem
         '
-        Me.mnuEstadisticas.Name = "mnuEstadisticas"
-        Me.mnuEstadisticas.Size = New System.Drawing.Size(152, 22)
-        Me.mnuEstadisticas.Text = "Estádistica"
+        Me.EstádisticaToolStripMenuItem.Name = "EstádisticaToolStripMenuItem"
+        Me.EstádisticaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.EstádisticaToolStripMenuItem.Text = "Estádistica"
         '
         'AyudaToolStripMenuItem1
         '
-        Me.AyudaToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuAcercaDe, Me.ToolStripMenuItem2})
+        Me.AyudaToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcercaDeToolStripMenuItem, Me.ToolStripMenuItem2})
         Me.AyudaToolStripMenuItem1.Name = "AyudaToolStripMenuItem1"
         Me.AyudaToolStripMenuItem1.Size = New System.Drawing.Size(53, 20)
         Me.AyudaToolStripMenuItem1.Text = "Ayuda"
         '
-        'mnuAcercaDe
+        'AcercaDeToolStripMenuItem
         '
-        Me.mnuAcercaDe.Name = "mnuAcercaDe"
-        Me.mnuAcercaDe.Size = New System.Drawing.Size(152, 22)
-        Me.mnuAcercaDe.Text = "Acerca de"
+        Me.AcercaDeToolStripMenuItem.Name = "AcercaDeToolStripMenuItem"
+        Me.AcercaDeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AcercaDeToolStripMenuItem.Text = "Acerca de"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem2.Text = "?"
-        '
-        'mnuLlamado
-        '
-        Me.mnuLlamado.Name = "mnuLlamado"
-        Me.mnuLlamado.Size = New System.Drawing.Size(152, 22)
-        Me.mnuLlamado.Text = "Llamados"
         '
         'frmMenu
         '
@@ -138,11 +131,10 @@ Partial Class frmMenu
     Friend WithEvents mnuEnfermeros As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents mnuFichaMedica As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mnuFichaMedicaReport As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mnuEstadisticas As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FichaMédicaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EstádisticaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mnuAcercaDe As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AcercaDeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents mnuLlamado As System.Windows.Forms.ToolStripMenuItem
 
 End Class

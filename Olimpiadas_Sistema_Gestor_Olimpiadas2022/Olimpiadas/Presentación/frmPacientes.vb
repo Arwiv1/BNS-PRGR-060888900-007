@@ -70,13 +70,9 @@ Public Class frmPacientes
     End Sub
 
     Private Sub Editar()
-        If lvPacientes.SelectedIndices.Count > 0 Then
-            Dim vForm As New frmAddPaciente
-            vForm.Text = "Editando '" & CStr(lvPacientes.Items(lvPacientes.SelectedIndices.Item(0)).SubItems(1).Text() & "'")
-            vForm.ShowDialog()
-        Else
-            MessageBox.Show("Debe seleccionar un Paciente.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-        End If
+        Dim vForm As New frmAddPaciente
+        vForm.Text = "Editando"
+        vForm.ShowDialog()
     End Sub
 
     Private Sub mnuEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuEditar.Click
@@ -86,5 +82,6 @@ Public Class frmPacientes
     Private Sub frmPacientes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Call ConfigurarGrilla()
         Call CargarPacientes()
+
     End Sub
 End Class

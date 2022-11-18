@@ -42,6 +42,7 @@ Public Class frmEnfermeros
     Private Sub frmEnfermero_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Call ConfigurarGrilla()
         Call CargarEnfermero()
+
     End Sub
 
     Private Sub mnuAgregar_Enfermeros_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuAgregar_Enfermeros.Click
@@ -52,15 +53,5 @@ Public Class frmEnfermeros
         vForm.Text = "Nuevo Enfermero"
         vForm.ShowDialog()
         CargarEnfermero()
-    End Sub
-
-    Private Sub Editar()
-        Dim vForm As New frmAddEnfermero
-        vForm.Text = "Editando"
-        vForm.ShowDialog()
-    End Sub
-
-    Private Sub mnuEditar_Enfermeros_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuEditar_Enfermeros.Click
-        Editar()
     End Sub
 End Class

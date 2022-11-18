@@ -17,10 +17,10 @@ Public Class frmAddPaciente
         oPaciente.Nacionalidad = cboNacionalidadPaciente.Text
         oPaciente.Etnia = cboEtnia.Text
         oPaciente.Religion = cboReligion.Text
-        oPaciente.Telefono = mskCodigodearea.Text & " " & txtTelefonoPaciente.Text
+        oPaciente.Telefono = mskCodigodearea.Text & txtTelefonoPaciente.Text
         oPaciente.email = txtEmail.Text
-        oPaciente.TelefonoEmergencia = mskCodigodeareaEmergencia.Text & " " & txtTelefonoPacienteEmergencia.Text
-        oPaciente.Direccion = txtCallePaciente.Text & " " & txtEntrePaciente.Text & " " & txtYPaciente.Text
+        oPaciente.TelefonoEmergencia = mskCodigodeareaEmergencia.Text & txtTelefonoPacienteEmergencia.Text
+        oPaciente.Direccion = txtCallePaciente.Text & txtEntrePaciente.Text & txtYPaciente.Text
 
         oPaciente.Insertar()
         Me.Close()

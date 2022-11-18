@@ -8,7 +8,6 @@ Module modMain
     Public oDB As cBaseDatos
     Public oPaciente As cPaciente
     Public oEnfermero As cEnfermero
-    Public oLlamado As cLlamado
 
     ' -----------------------------
     ' \\ -- Variables Globales
@@ -25,9 +24,8 @@ Module modMain
             oDB.Conectar()
             oPaciente = New cPaciente
             oEnfermero = New cEnfermero
-            oLlamado = New cLlamado
             Application.EnableVisualStyles()
-            Application.Run(frmMenu)
+            Application.Run(frmLogin)
         Catch ex As Exception
             MessageBox.Show("Error al Inicar. " & vbNewLine & "Descripción del Error: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try

@@ -194,38 +194,60 @@ Public Class cPaciente
         Return F_Resultado
     End Function
 
-    'Public Function Actualizar() As Boolean
-    '    Dim vSQL As New StringBuilder
-    '    Dim vResultado As Boolean = False
+    Public Function EliminarAlumno(ByVal unIdAlumno As String) As Boolean
+        Dim vResultado As Boolean = False
+        Dim vSQL As New StringBuilder
+        vSQL.Append("DELETE FROM Direccion WHERE idDireccion=(select idDireccion from Alumno where idAlumno='" & unIdAlumno & "');")
+        vSQL.Append("DELETE FROM Telefono WHERE idTelefono=(select idTelefono from Alumno where idAlumno='" & unIdAlumno & "');") 'Planilla'
+        vSQL.Append("DELETE FROM Tutor WHERE idAlumno='" & unIdAlumno & "';")
+        vSQL.Append("DELETE FROM Alumno WHERE idAlumno='" & unIdAlumno & "';")
 
-    '    vSQL.Append("UPDATE Paciente SET")
+        Call oDB.EjecutarComando(vSQL.ToString)
+        vResultado = True
 
-    '    vSQL.Append(" Nombre='" & Me.m_Nombre & "',")
-    '    vSQL.Append(" Apellido='" & Me.m_Apellido & "',")
-    '    vSQL.Append(" Sexo='" & Me.m_Sexo & "',")
-    '    vSQL.Append(" DNI='" & Me.m_Dni & "',")
-    '    vSQL.Append(" Telefono_Emergencia='" & Me.m_TelefonoEmergencia & "',")
-    '    vSQL.Append(" Direccion='" & Me.m_Direccion & "',")
-    '    vSQL.Append(" Correo_electronico=date('" & Me.m_email & "'),")
-    '    vSQL.Append(" Etnia='" & Me.m_Etnia & "',")
-    '    vSQL.Append(" Religion='" & Me.m_Religion & "',")
-    '    vSQL.Append(" Estudios='" & Me.m_Estudio & "',")
-    '    vSQL.Append(" Telefono='" & Me.m_Telefono & "',")
-    '    vSQL.Append(" Genero='" & Me.m_Sexo & "',")
-    '    vSQL.Append(" Nombre_autopersibido='" & Me.m_NombreAutopercibido & "'")
 
-    '    vSQL.Append(" WHERE Idpaciente='" & Me.m_idPaciente & "'")
-
-    '    Call oDB.EjecutarComando(vSQL.ToString)
-    '    vResultado = True
-    '    Return vResultado
-    'End Function
+        Return vResultado
+    End Function
 
     Public Function TraerPaciente() As MySqlDataReader
         Dim vSQL As New StringBuilder
         Dim cursoLista As String = ""
-        vSQL.Append("SELECT Idpaciente, Concat(Nombre, ' ', Apellido) AS 'Nombre', Sexo, DNI, Telefono_Emergencia, Direccion, Correo_electronico, Etnia, Religion, Estudios, Telefono, Genero, Nombre_autopersibido  FROM Paciente")
+        vSQL.Append("SELECT Idpaciente, Concat(Nombre, Apellido) AS 'Nombre', Sexo, DNI, Telefono_Emergencia, Direccion, Correo_electronico, Etnia, Religion, Estudios, Telefono, Genero, Nombre_autopersibido  FROM Paciente")
         Return oDB.EjecutarConsulta(vSQL.ToString)
     End Function
+
+    Public Function Actualizar() As Boolean
+        Dim vSQL As New StringBuilder
+        Dim vResultado As Boolean = False
+
+        vSQL.Append("UPDATE Alumno SET")
+
+        'vSQL.Append(" Nombre='" & Me.m_Nombre & "',")
+        'vSQL.Append(" Apellido='" & Me.m_Apellido & "',")
+        'vSQL.Append(" idTipoDocumento='" & Me.m_TipoDocumento & "',")
+        'vSQL.Append(" idDireccion='" & Me.m_Direccion & "',")
+        'vSQL.Append(" idTurno='" & Me.m_Turno & "',")
+        'vSQL.Append(" Lugar_Nacimiento='" & Me.m_LugarNacimiento & "',")
+        'vSQL.Append(" Fecha_Nacimiento=date('" & Me.m_FechaNacimiento & "'),")
+        'vSQL.Append(" Numero_Documento='" & Me.m_Documento & "',")
+        'vSQL.Append(" CUIL='" & Me.m_CUIL & "',")
+        'vSQL.Append(" idNacionalidad='" & Me.m_Nacionalidad & "',")
+        'vSQL.Append(" Escuela_Procedencia='" & Me.m_EscuelaProcedencia & "',")
+        'vSQL.Append(" sexo='" & Me.m_Sexo & "',")
+        'vSQL.Append(" Legajo='" & Me.m_Legajo & "',")
+        'vSQL.Append(" idEspecialidad='" & Me.m_Especialidad & "',")
+        'vSQL.Append(" Condicion='" & Me.m_Condicion & "',")
+        'vSQL.Append(" email='" & Me.m_email & "',")
+        'vSQL.Append(" email_institucional='" & Me.m_emailInstitucional & "',")
+        'vSQL.Append(" Anio_Inscripcion='" & Me.m_AnioInscripcion & "',")
+        'vSQL.Append(" Legajo_Libro='" & Me.m_libro & "',")
+        'vSQL.Append(" Legajo_Folio='" & Me.m_folio & "'")
+        'vSQL.Append(" WHERE idAlumno='" & Me.m_idAlumno & "'")
+
+        Call oDB.EjecutarComando(vSQL.ToString)
+        vResultado = True
+        Return vResultado
+    End Function
+
 
 End Class

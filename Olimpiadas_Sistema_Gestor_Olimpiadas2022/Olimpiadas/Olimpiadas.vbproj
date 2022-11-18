@@ -68,7 +68,6 @@
       <HintPath>..\..\..\descargas\Olimpiadas 2\bin\Debug\mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -93,7 +92,6 @@
   <ItemGroup>
     <Compile Include="Datos\cBaseDatos.vb" />
     <Compile Include="Logica\cEnfermero.vb" />
-    <Compile Include="Logica\cLlamado.vb" />
     <Compile Include="Logica\cPaciente.vb" />
     <Compile Include="modMain.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -135,12 +133,6 @@
     <Compile Include="Presentación\frmFichaMedica.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentación\frmLlamado.Designer.vb">
-      <DependentUpon>frmLlamado.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentación\frmLlamado.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Presentación\frmMenu.Designer.vb">
       <DependentUpon>frmMenu.vb</DependentUpon>
     </Compile>
@@ -153,7 +145,12 @@
     <Compile Include="Presentación\frmPacientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Utiles\cUtiles.vb" />
+    <Compile Include="Presentación\frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -174,17 +171,18 @@
     <EmbeddedResource Include="Presentación\frmFichaMedica.resx">
       <DependentUpon>frmFichaMedica.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentación\frmLlamado.resx">
-      <DependentUpon>frmLlamado.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentación\frmMenu.resx">
       <DependentUpon>frmMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentación\frmPacientes.resx">
       <DependentUpon>frmPacientes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

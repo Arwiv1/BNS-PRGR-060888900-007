@@ -23,8 +23,6 @@ Partial Class frmAddEnfermero
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.grpDatosEnfermero = New System.Windows.Forms.GroupBox()
-        Me.txtCodIdentificacion = New System.Windows.Forms.TextBox()
-        Me.lblCodIdentificacion = New System.Windows.Forms.Label()
         Me.cboArea = New System.Windows.Forms.ComboBox()
         Me.lblArea = New System.Windows.Forms.Label()
         Me.cboEstudios = New System.Windows.Forms.ComboBox()
@@ -72,8 +70,6 @@ Partial Class frmAddEnfermero
         '
         'grpDatosEnfermero
         '
-        Me.grpDatosEnfermero.Controls.Add(Me.txtCodIdentificacion)
-        Me.grpDatosEnfermero.Controls.Add(Me.lblCodIdentificacion)
         Me.grpDatosEnfermero.Controls.Add(Me.cboArea)
         Me.grpDatosEnfermero.Controls.Add(Me.lblArea)
         Me.grpDatosEnfermero.Controls.Add(Me.cboEstudios)
@@ -95,24 +91,6 @@ Partial Class frmAddEnfermero
         Me.grpDatosEnfermero.TabIndex = 6
         Me.grpDatosEnfermero.TabStop = False
         Me.grpDatosEnfermero.Text = "Datos Enfermero"
-        '
-        'txtCodIdentificacion
-        '
-        Me.txtCodIdentificacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCodIdentificacion.Location = New System.Drawing.Point(193, 126)
-        Me.txtCodIdentificacion.Name = "txtCodIdentificacion"
-        Me.txtCodIdentificacion.Size = New System.Drawing.Size(143, 20)
-        Me.txtCodIdentificacion.TabIndex = 128
-        '
-        'lblCodIdentificacion
-        '
-        Me.lblCodIdentificacion.AutoSize = True
-        Me.lblCodIdentificacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.lblCodIdentificacion.Location = New System.Drawing.Point(6, 130)
-        Me.lblCodIdentificacion.Name = "lblCodIdentificacion"
-        Me.lblCodIdentificacion.Size = New System.Drawing.Size(155, 16)
-        Me.lblCodIdentificacion.TabIndex = 127
-        Me.lblCodIdentificacion.Text = "Codigo de Identificación:"
         '
         'cboArea
         '
@@ -198,7 +176,7 @@ Partial Class frmAddEnfermero
         Me.gprNacimientoAlumno.Controls.Add(Me.lblNacionalidadPaciente)
         Me.gprNacimientoAlumno.Controls.Add(Me.mskNacimiento)
         Me.gprNacimientoAlumno.Controls.Add(Me.lblNacimiento)
-        Me.gprNacimientoAlumno.Location = New System.Drawing.Point(6, 153)
+        Me.gprNacimientoAlumno.Location = New System.Drawing.Point(6, 143)
         Me.gprNacimientoAlumno.Name = "gprNacimientoAlumno"
         Me.gprNacimientoAlumno.Size = New System.Drawing.Size(516, 57)
         Me.gprNacimientoAlumno.TabIndex = 15
@@ -319,9 +297,9 @@ Partial Class frmAddEnfermero
         Me.grpTelefono.Controls.Add(Me.lblEmail)
         Me.grpTelefono.Controls.Add(Me.lblCodigodearea)
         Me.grpTelefono.Controls.Add(Me.txtEmail)
-        Me.grpTelefono.Location = New System.Drawing.Point(6, 216)
+        Me.grpTelefono.Location = New System.Drawing.Point(6, 206)
         Me.grpTelefono.Name = "grpTelefono"
-        Me.grpTelefono.Size = New System.Drawing.Size(516, 145)
+        Me.grpTelefono.Size = New System.Drawing.Size(516, 143)
         Me.grpTelefono.TabIndex = 19
         Me.grpTelefono.TabStop = False
         Me.grpTelefono.Text = "Datos de contacto"
@@ -332,7 +310,7 @@ Partial Class frmAddEnfermero
         Me.grpDatosEmergencia.Controls.Add(Me.lbltxtTelefonoPacienteEmergencia)
         Me.grpDatosEmergencia.Controls.Add(Me.mskCodigodeareaEmergencia)
         Me.grpDatosEmergencia.Controls.Add(Me.lblCodigodeareaEmergencia)
-        Me.grpDatosEmergencia.Location = New System.Drawing.Point(6, 71)
+        Me.grpDatosEmergencia.Location = New System.Drawing.Point(6, 69)
         Me.grpDatosEmergencia.Name = "grpDatosEmergencia"
         Me.grpDatosEmergencia.Size = New System.Drawing.Size(504, 68)
         Me.grpDatosEmergencia.TabIndex = 126
@@ -422,7 +400,7 @@ Partial Class frmAddEnfermero
         'txtEmail
         '
         Me.txtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtEmail.Location = New System.Drawing.Point(187, 45)
+        Me.txtEmail.Location = New System.Drawing.Point(193, 46)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(231, 20)
         Me.txtEmail.TabIndex = 23
@@ -550,6 +528,4 @@ Partial Class frmAddEnfermero
     Friend WithEvents lblArea As System.Windows.Forms.Label
     Friend WithEvents cmdAceptar As System.Windows.Forms.Button
     Friend WithEvents cmdLimpiar As System.Windows.Forms.Button
-    Friend WithEvents txtCodIdentificacion As System.Windows.Forms.TextBox
-    Friend WithEvents lblCodIdentificacion As System.Windows.Forms.Label
 End Class
