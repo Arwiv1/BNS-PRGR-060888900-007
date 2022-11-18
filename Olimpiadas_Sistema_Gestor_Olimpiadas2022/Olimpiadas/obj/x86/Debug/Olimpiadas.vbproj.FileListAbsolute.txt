@@ -1,0 +1,29 @@
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\bin\Debug\Olimpiadas.exe
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\bin\Debug\Olimpiadas.pdb
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\bin\Debug\Olimpiadas.xml
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\obj\x86\Debug\Olimpiadas.frmMenu.resources
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\obj\x86\Debug\Olimpiadas.Resources.resources
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\obj\x86\Debug\Olimpiadas.frmPacientes.resources
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\obj\x86\Debug\Olimpiadas.vbproj.GenerateResource.Cache
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\obj\x86\Debug\Olimpiadas.exe
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\obj\x86\Debug\Olimpiadas.xml
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\obj\x86\Debug\Olimpiadas.pdb
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\obj\x86\Debug\Olimpiadas.frmEnfermeros.resources
+C:\Users\Alumno\AppData\Local\Temporary Projects\Olimpiadas\obj\x86\Debug\Olimpiadas.frmPaciente.resources
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.exe
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.xml
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.pdb
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.Resources.resources
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.frmEnfermeros.resources
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.frmMenu.resources
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.frmAddPaciente.resources
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.frmFichaMedica.resources
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.frmPacientes.resources
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.vbproj.GenerateResource.Cache
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\bin\Debug\Olimpiadas.exe
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\bin\Debug\Olimpiadas.pdb
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\bin\Debug\Olimpiadas.xml
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.vbprojResolveAssemblyReference.cache
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\bin\Debug\mysql.data.dll
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.frmAddEnfermero.resources
+D:\usuarios\alumno\escritorio\Olimpiadas\Olimpiadas\obj\x86\Debug\Olimpiadas.frmLlamado.resources

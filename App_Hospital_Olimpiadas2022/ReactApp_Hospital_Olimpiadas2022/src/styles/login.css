@@ -1,0 +1,47 @@
+.title_login{
+    margin: auto;
+    text-align: center;
+    margin: 25px;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.login_form > input{
+    border-color: rgb(121, 121, 121);
+    border-style: solid;
+    border-radius: 15px;
+    height: 2rem;
+    font-size: 1.25rem;
+    border-width: 10px;
+}
+.login_form > label{
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+.login_form > button{
+    margin-top: 25px;
+    height: 70px;
+    border-radius: 15px;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    border-style: solid;
+    border-width: 8px;
+    border-color:rgb(121, 121, 121);
+}
+
+.submit_login_form{
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.error{
+    color: red;
+    text-align: center;
+}
